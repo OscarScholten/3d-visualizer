@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en" ng-app="VisualizerApp">
+<head>
+  <meta charset="utf-8">
+  <title>My HTML File</title>
+  <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="components/angular/angular.js"></script>
+  <script src="js/controllers.js"></script>
+</head>
+<body>
+
+<ul ng-controller="ShapesCtrl">
+  <li ng-repeat="shape in shapes">
+    name = {{shape.name}} value = {{shape.value}}
+  </li>
+</ul>
+
+</body>
+</html>

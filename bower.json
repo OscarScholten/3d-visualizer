@@ -1,0 +1,19 @@
+{
+  "name": "3d-visualizer",
+  "version": "0.0.1",
+  "homepage": "https://github.com/OscarScholten/3d-visualizer",
+  "main": "app/index.html",
+  "license": "Apache License version 2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "three.min.js": "https://github.com/mrdoob/three.js/tree/r67/build/three.min.js",
+    "angular": "~1.2.19",
+    "bootstrap": "~3.2.0"
+  }
+}
