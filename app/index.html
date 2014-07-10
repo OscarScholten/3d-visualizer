@@ -5,16 +5,32 @@
   <title>My HTML File</title>
   <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/app.css">
+
   <script src="components/angular/angular.js"></script>
+  <script src="components/three.min.js/index.js"></script>
+
   <script src="js/controllers.js"></script>
+  <script src="js/scene.js"></script>
 </head>
 <body>
 
-<ul ng-controller="ShapesCtrl">
-  <li ng-repeat="shape in shapes">
-    name = {{shape.name}} value = {{shape.value}}
-  </li>
-</ul>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-9" id="preview"></div>
+    <div class="col-md-3">
+      <p>Shapes</p>
+      <ul ng-controller="ShapesCtrl" class="list-group">
+        <li ng-repeat="shape in shapes" class="list-group-item">
+          name = {{shape.name}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script type="application/javascript">
+  scene.init('preview');
+</script>
 
 </body>
 </html>
