@@ -11,6 +11,7 @@
     "test",
     "tests"
   ],
+
   "dependencies": {
     "three.min.js": "https://raw.githubusercontent.com/mrdoob/three.js/r67/build/three.min.js",
     "angular": "~1.2.19",
